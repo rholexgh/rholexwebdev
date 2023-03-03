@@ -15,7 +15,8 @@ export default function Navbar() {
       className={`fixed top-0 z-50 flex w-full flex-col items-center border-b border-transparent bg-white bg-opacity-30 backdrop-blur-lg backdrop-filter`}
     >
       <div className="flex w-full max-w-7xl flex-col px-4 py-2">
-        <div className="flex w-full justify-between">
+        <div>Hello</div>
+        <div className="hidden w-full justify-between">
           {/* Logo and Pic */}
           <div className="flex items-center space-x-2">
             <div className="nav-link-logo">
