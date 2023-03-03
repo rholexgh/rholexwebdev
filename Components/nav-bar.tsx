@@ -15,8 +15,7 @@ export default function Navbar() {
       className={`fixed top-0 z-50 flex w-full flex-col items-center border-b border-transparent bg-white bg-opacity-30 backdrop-blur-lg backdrop-filter`}
     >
       <div className="flex w-full max-w-7xl flex-col px-4 py-2">
-        <div>Hello</div>
-        <div className="hidden w-full justify-between">
+        <div className="flex w-full justify-between">
           {/* Logo and Pic */}
           <div className="flex items-center space-x-2">
             <div className="nav-link-logo">
@@ -41,8 +40,8 @@ export default function Navbar() {
           {/* Links and CTA */}
           <div className="">
             {/* desktop View */}
-            <NavigationMenu.Root className="relative z-[1] flex w-full justify-center">
-              <div className="hidden items-center space-x-4 md:flex">
+            <NavigationMenu.Root className="relative z-[1] hidden w-full justify-center md:flex">
+              <div className="flex items-center space-x-4">
                 {/* nav links */}
                 {/* blog */}
                 <div>
@@ -139,7 +138,7 @@ export default function Navbar() {
                     </NavigationMenu.Indicator>
                   </NavigationMenu.List>
 
-                  <div className="absolute top-full left-0 flex w-full justify-center perspective-[2000px]">
+                  <div className="perspective-[2000px] absolute top-full left-0 flex w-full justify-center">
                     <NavigationMenu.Viewport className="relative mt-[10px] h-[var(--radix-navigation-menu-viewport-height)] w-full origin-[top_center] overflow-hidden rounded-[6px] bg-white transition-[width,_height] duration-300 data-[state=open]:animate-scaleIn data-[state=closed]:animate-scaleOut sm:w-[var(--radix-navigation-menu-viewport-width)]" />
                   </div>
                 </div>

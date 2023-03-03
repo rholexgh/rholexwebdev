@@ -1,6 +1,7 @@
+import Accordion from "@/Components/Accordation";
 import { FAQS, HomeGalleryArray } from "@/Components/array_items";
 import { HomeGalleryImages } from "@/Components/gallery-image-components";
-import { Accordion, PrimaryBtn } from "@/Components/reuseable-components";
+import { PrimaryBtn } from "@/Components/reuseable-components";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
