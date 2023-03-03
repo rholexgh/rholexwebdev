@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .nav-link-logo {
+    @apply text-xl font-black text-black;
+  }
+  .nav-link {
+    @apply font-medium text-black;
+  }
+  .accent {
+    @apply text-alt-100 capitalize;
+  }
+}
+
+@layer base {
+  a {
+    -webkit-tap-highlight-color: transparent;
+  }
+  label {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+  }
+  input {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+  select {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+  html {
+    @apply text-lg antialiased;
+  }
+}
