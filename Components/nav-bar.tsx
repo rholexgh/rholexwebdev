@@ -40,46 +40,47 @@ export default function Navbar() {
           {/* Links and CTA */}
           <div className="">
             {/* desktop View */}
-            <NavigationMenu.Root className="relative z-[1] hidden w-full justify-center md:flex">
-              <div className="flex items-center space-x-4">
-                {/* nav links */}
-                {/* blog */}
-                <div>
-                  <Link href={"/Blog"}>
-                    <h1 className="nav-link">Blog</h1>
-                  </Link>
-                  {pathname === "/Blog" ? (
-                    <motion.div
-                      layoutId="nav"
-                      transition={{
-                        opacity: { ease: "easeInOut" },
-                        layout: { duration: 0.3 },
-                      }}
-                      className="h-[0.2rem] w-full bg-black"
-                    ></motion.div>
-                  ) : (
-                    <div className="h-[0.2rem] bg-transparent"></div>
-                  )}
-                </div>
-                {/* Gallery */}
-                <div className="hidden px-4 md:flex md:flex-col">
-                  <Link href={"/Gallery"}>
-                    <h1 className="nav-link">Gallery</h1>
-                  </Link>
-                  {pathname === "/Gallery" ? (
-                    <motion.div
-                      layoutId="nav"
-                      transition={{
-                        opacity: { ease: "easeInOut" },
-                        layout: { duration: 0.3 },
-                      }}
-                      className="h-[0.2rem] w-full bg-black"
-                    ></motion.div>
-                  ) : (
-                    <div className="h-[0.2rem] bg-transparent"></div>
-                  )}
-                </div>
-                {/* Gallery */}
+
+            <div className="flex items-center space-x-4">
+              {/* nav links */}
+              {/* blog */}
+              <div>
+                <Link href={"/Blog"}>
+                  <h1 className="nav-link">Blog</h1>
+                </Link>
+                {pathname === "/Blog" ? (
+                  <motion.div
+                    layoutId="nav"
+                    transition={{
+                      opacity: { ease: "easeInOut" },
+                      layout: { duration: 0.3 },
+                    }}
+                    className="h-[0.2rem] w-full bg-black"
+                  ></motion.div>
+                ) : (
+                  <div className="h-[0.2rem] bg-transparent"></div>
+                )}
+              </div>
+              {/* Gallery */}
+              <div className="hidden px-4 md:flex md:flex-col">
+                <Link href={"/Gallery"}>
+                  <h1 className="nav-link">Gallery</h1>
+                </Link>
+                {pathname === "/Gallery" ? (
+                  <motion.div
+                    layoutId="nav"
+                    transition={{
+                      opacity: { ease: "easeInOut" },
+                      layout: { duration: 0.3 },
+                    }}
+                    className="h-[0.2rem] w-full bg-black"
+                  ></motion.div>
+                ) : (
+                  <div className="h-[0.2rem] bg-transparent"></div>
+                )}
+              </div>
+              {/* Gallery */}{" "}
+              <NavigationMenu.Root className="relative z-[1] hidden w-full justify-center md:flex">
                 <div className="hidden px-4 md:flex md:flex-col">
                   <NavigationMenu.List className="">
                     <NavigationMenu.Item>
@@ -142,44 +143,44 @@ export default function Navbar() {
                     <NavigationMenu.Viewport className="relative mt-[10px] h-[var(--radix-navigation-menu-viewport-height)] w-full origin-[top_center] overflow-hidden rounded-[6px] bg-white transition-[width,_height] duration-300 data-[state=open]:animate-scaleIn data-[state=closed]:animate-scaleOut sm:w-[var(--radix-navigation-menu-viewport-width)]" />
                   </div>
                 </div>
-                {/* Terms And Conditions */}
-                <div>
-                  <Link href={"/TermsAndConditions"}>
-                    <h1 className="nav-link">T&C</h1>
-                  </Link>
-                  {pathname === "/TermsAndConditions" ? (
-                    <motion.div
-                      layoutId="nav"
-                      transition={{
-                        opacity: { ease: "easeInOut" },
-                        layout: { duration: 0.3 },
-                      }}
-                      className="h-[0.2rem] w-full bg-black"
-                    ></motion.div>
-                  ) : (
-                    <div className="h-[0.2rem] bg-transparent"></div>
-                  )}
-                </div>
-                {/* Book Me */}
-                <div className="hidden px-4 md:flex md:flex-col">
-                  <Link href={"/BookMe"}>
-                    <h1 className="nav-link">Book Me</h1>
-                  </Link>
-                  {pathname === "/BookMe" ? (
-                    <motion.div
-                      layoutId="nav"
-                      transition={{
-                        opacity: { ease: "easeInOut" },
-                        layout: { duration: 0.3 },
-                      }}
-                      className="h-[0.2rem] w-full bg-black"
-                    ></motion.div>
-                  ) : (
-                    <div className="h-[0.2rem] bg-transparent"></div>
-                  )}
-                </div>
+              </NavigationMenu.Root>
+              {/* Terms And Conditions */}
+              <div>
+                <Link href={"/TermsAndConditions"}>
+                  <h1 className="nav-link">T&C</h1>
+                </Link>
+                {pathname === "/TermsAndConditions" ? (
+                  <motion.div
+                    layoutId="nav"
+                    transition={{
+                      opacity: { ease: "easeInOut" },
+                      layout: { duration: 0.3 },
+                    }}
+                    className="h-[0.2rem] w-full bg-black"
+                  ></motion.div>
+                ) : (
+                  <div className="h-[0.2rem] bg-transparent"></div>
+                )}
               </div>
-            </NavigationMenu.Root>
+              {/* Book Me */}
+              <div className="hidden px-4 md:flex md:flex-col">
+                <Link href={"/BookMe"}>
+                  <h1 className="nav-link">Book Me</h1>
+                </Link>
+                {pathname === "/BookMe" ? (
+                  <motion.div
+                    layoutId="nav"
+                    transition={{
+                      opacity: { ease: "easeInOut" },
+                      layout: { duration: 0.3 },
+                    }}
+                    className="h-[0.2rem] w-full bg-black"
+                  ></motion.div>
+                ) : (
+                  <div className="h-[0.2rem] bg-transparent"></div>
+                )}
+              </div>
+            </div>
 
             {/* Mobile View */}
             <div className="md:hidden">
