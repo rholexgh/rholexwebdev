@@ -82,7 +82,7 @@ export default function Home() {
         <div className="flex w-full max-w-7xl flex-col px-4">
           <div className="pb-4">
             <h1 className="py-2 text-3xl font-black">
-              FREQUENTLY ASKED QUESTIONS(FAQs)
+              FREQUENTLY ASKED QUESTIONS(FAQs).
             </h1>
             <p className="capitalize">
               Have Any Question Look Through Our Freequently asked questions
